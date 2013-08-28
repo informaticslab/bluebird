@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6B497AB17CE39C6007739B7 /* Survey.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B497AA17CE39C6007739B7 /* Survey.m */; };
+		A6B497AE17CE3CDE007739B7 /* SurveyQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B497AD17CE3CDE007739B7 /* SurveyQuestion.m */; };
+		A6B497B117CE3E21007739B7 /* BluebirdObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B497B017CE3E21007739B7 /* BluebirdObject.m */; };
+		A6B497B417CE42E7007739B7 /* SurveyAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B497B317CE42E7007739B7 /* SurveyAnswer.m */; };
 		A6BA5F2717CD444D00567158 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BA5F2617CD444D00567158 /* UIKit.framework */; };
 		A6BA5F2917CD444D00567158 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BA5F2817CD444D00567158 /* Foundation.framework */; };
 		A6BA5F2B17CD444D00567158 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BA5F2A17CD444D00567158 /* CoreGraphics.framework */; };
@@ -22,6 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6B497A917CE39C6007739B7 /* Survey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Survey.h; sourceTree = "<group>"; };
+		A6B497AA17CE39C6007739B7 /* Survey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Survey.m; sourceTree = "<group>"; };
+		A6B497AC17CE3CDE007739B7 /* SurveyQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyQuestion.h; sourceTree = "<group>"; };
+		A6B497AD17CE3CDE007739B7 /* SurveyQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyQuestion.m; sourceTree = "<group>"; };
+		A6B497AF17CE3E21007739B7 /* BluebirdObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluebirdObject.h; sourceTree = "<group>"; };
+		A6B497B017CE3E21007739B7 /* BluebirdObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluebirdObject.m; sourceTree = "<group>"; };
+		A6B497B217CE42E7007739B7 /* SurveyAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyAnswer.h; sourceTree = "<group>"; };
+		A6B497B317CE42E7007739B7 /* SurveyAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyAnswer.m; sourceTree = "<group>"; };
 		A6BA5F2317CD444D00567158 /* bluebird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bluebird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BA5F2617CD444D00567158 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A6BA5F2817CD444D00567158 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +106,14 @@
 				A6BA5F4417CD444D00567158 /* FlipsideViewController.h */,
 				A6BA5F4517CD444D00567158 /* FlipsideViewController.m */,
 				A6BA5F2D17CD444D00567158 /* Supporting Files */,
+				A6B497A917CE39C6007739B7 /* Survey.h */,
+				A6B497AA17CE39C6007739B7 /* Survey.m */,
+				A6B497AC17CE3CDE007739B7 /* SurveyQuestion.h */,
+				A6B497AD17CE3CDE007739B7 /* SurveyQuestion.m */,
+				A6B497AF17CE3E21007739B7 /* BluebirdObject.h */,
+				A6B497B017CE3E21007739B7 /* BluebirdObject.m */,
+				A6B497B217CE42E7007739B7 /* SurveyAnswer.h */,
+				A6B497B317CE42E7007739B7 /* SurveyAnswer.m */,
 			);
 			path = bluebird;
 			sourceTree = "<group>";
@@ -182,6 +202,10 @@
 				A6BA5F3717CD444D00567158 /* AppDelegate.m in Sources */,
 				A6BA5F4317CD444D00567158 /* MainViewController.m in Sources */,
 				A6BA5F4617CD444D00567158 /* FlipsideViewController.m in Sources */,
+				A6B497AB17CE39C6007739B7 /* Survey.m in Sources */,
+				A6B497AE17CE3CDE007739B7 /* SurveyQuestion.m in Sources */,
+				A6B497B117CE3E21007739B7 /* BluebirdObject.m in Sources */,
+				A6B497B417CE42E7007739B7 /* SurveyAnswer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +328,7 @@
 				A6BA5F4B17CD444D00567158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
