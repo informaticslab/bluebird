@@ -8,10 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "BluebirdObject.h"
+#import "SurveyQuestion.h"
+#import "SurveyAnswer.h"
 
 @interface Survey : BluebirdObject
 
 @property(nonatomic, strong) NSMutableArray *questions;
 @property(nonatomic, strong) NSString *name;
+
+-(id)initWithStaticData;
+-(NSInteger)numberOfQuestions;
+-(SurveyQuestion *)questionAtIndex:(NSInteger)index;
+-(NSString *)questionTextAtIndex:(NSInteger)index;
+-(NSString *)getResultsTweet;
 
 @end

@@ -7,8 +7,6 @@
 //
 
 #import "Survey.h"
-#import "SurveyQuestion.h"
-#import "SurveyAnswer.h"
 
 @implementation Survey
 
@@ -53,7 +51,44 @@
 
 }
 
+-(NSInteger)numberOfQuestions
+{
+    
+    return [_questions count];
 
+}
+
+-(NSString *)questionTextAtIndex:(NSInteger)index
+{
+    SurveyQuestion *question = _questions[index];
+    return question.text;
+    
+    
+}
+
+-(SurveyQuestion *)questionAtIndex:(NSInteger)index
+{
+    SurveyQuestion *question = _questions[index];
+    return question;
+    
+    
+}
+
+-(NSString *)getResultsTweet
+{
+    
+    NSString *tweetStart = @"I'm helping CDC crowd out the flu. @tellCDC ";
+    NSString *tweetEnd = @". Here's how you can help: http:////www.cdc.gov/flu";
+    
+    NSString *results = tweetStart;
+    for (SurveyQuestion *question in _questions) 
+        results = [results stringByAppendingString:[question getHashTagResults]];
+    
+    results = [results stringByAppendingString:tweetEnd];
+    
+    return results;
+    
+}
 
 
 @end

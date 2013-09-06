@@ -23,6 +23,18 @@
 		A6BA5F4017CD444D00567158 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BA5F3E17CD444D00567158 /* MainStoryboard.storyboard */; };
 		A6BA5F4317CD444D00567158 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA5F4217CD444D00567158 /* MainViewController.m */; };
 		A6BA5F4617CD444D00567158 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA5F4517CD444D00567158 /* FlipsideViewController.m */; };
+		A6E9EFDC17D7897E00E8599C /* QuestionDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E9EFDB17D7897E00E8599C /* QuestionDetailVC.m */; };
+		A6EEE76217D9532A0080A338 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EEE76117D9532A0080A338 /* Social.framework */; };
+		A6EEE76D17DA488B0080A338 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76317DA488B0080A338 /* Icon-72.png */; };
+		A6EEE76E17DA488B0080A338 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76417DA488B0080A338 /* Icon-72@2x.png */; };
+		A6EEE76F17DA488B0080A338 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76517DA488B0080A338 /* Icon-Small-50.png */; };
+		A6EEE77017DA488B0080A338 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76617DA488B0080A338 /* Icon-Small-50@2x.png */; };
+		A6EEE77117DA488B0080A338 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76717DA488B0080A338 /* Icon-Small.png */; };
+		A6EEE77217DA488B0080A338 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76817DA488B0080A338 /* Icon-Small@2x.png */; };
+		A6EEE77317DA488B0080A338 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76917DA488B0080A338 /* Icon.png */; };
+		A6EEE77417DA488B0080A338 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76A17DA488B0080A338 /* Icon@2x.png */; };
+		A6EEE77517DA488B0080A338 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76B17DA488B0080A338 /* iTunesArtwork.png */; };
+		A6EEE77617DA488B0080A338 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE76C17DA488B0080A338 /* iTunesArtwork@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +64,19 @@
 		A6BA5F4217CD444D00567158 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		A6BA5F4417CD444D00567158 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		A6BA5F4517CD444D00567158 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		A6E9EFDA17D7897E00E8599C /* QuestionDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDetailVC.h; sourceTree = "<group>"; };
+		A6E9EFDB17D7897E00E8599C /* QuestionDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDetailVC.m; sourceTree = "<group>"; };
+		A6EEE76117D9532A0080A338 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A6EEE76317DA488B0080A338 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = SOURCE_ROOT; };
+		A6EEE76417DA488B0080A338 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = SOURCE_ROOT; };
+		A6EEE76517DA488B0080A338 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = SOURCE_ROOT; };
+		A6EEE76617DA488B0080A338 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = SOURCE_ROOT; };
+		A6EEE76717DA488B0080A338 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = SOURCE_ROOT; };
+		A6EEE76817DA488B0080A338 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = SOURCE_ROOT; };
+		A6EEE76917DA488B0080A338 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
+		A6EEE76A17DA488B0080A338 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		A6EEE76B17DA488B0080A338 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = SOURCE_ROOT; };
+		A6EEE76C17DA488B0080A338 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EEE76217D9532A0080A338 /* Social.framework in Frameworks */,
 				A6BA5F2717CD444D00567158 /* UIKit.framework in Frameworks */,
 				A6BA5F2917CD444D00567158 /* Foundation.framework in Frameworks */,
 				A6BA5F2B17CD444D00567158 /* CoreGraphics.framework in Frameworks */,
@@ -71,6 +97,7 @@
 		A6BA5F1A17CD444D00567158 = {
 			isa = PBXGroup;
 			children = (
+				A6EEE76117D9532A0080A338 /* Social.framework */,
 				A6BA5F2C17CD444D00567158 /* bluebird */,
 				A6BA5F2517CD444D00567158 /* Frameworks */,
 				A6BA5F2417CD444D00567158 /* Products */,
@@ -114,6 +141,8 @@
 				A6B497B017CE3E21007739B7 /* BluebirdObject.m */,
 				A6B497B217CE42E7007739B7 /* SurveyAnswer.h */,
 				A6B497B317CE42E7007739B7 /* SurveyAnswer.m */,
+				A6E9EFDA17D7897E00E8599C /* QuestionDetailVC.h */,
+				A6E9EFDB17D7897E00E8599C /* QuestionDetailVC.m */,
 			);
 			path = bluebird;
 			sourceTree = "<group>";
@@ -121,6 +150,16 @@
 		A6BA5F2D17CD444D00567158 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6EEE76317DA488B0080A338 /* Icon-72.png */,
+				A6EEE76417DA488B0080A338 /* Icon-72@2x.png */,
+				A6EEE76517DA488B0080A338 /* Icon-Small-50.png */,
+				A6EEE76617DA488B0080A338 /* Icon-Small-50@2x.png */,
+				A6EEE76717DA488B0080A338 /* Icon-Small.png */,
+				A6EEE76817DA488B0080A338 /* Icon-Small@2x.png */,
+				A6EEE76917DA488B0080A338 /* Icon.png */,
+				A6EEE76A17DA488B0080A338 /* Icon@2x.png */,
+				A6EEE76B17DA488B0080A338 /* iTunesArtwork.png */,
+				A6EEE76C17DA488B0080A338 /* iTunesArtwork@2x.png */,
 				A6BA5F2E17CD444D00567158 /* bluebird-Info.plist */,
 				A6BA5F2F17CD444D00567158 /* InfoPlist.strings */,
 				A6BA5F3217CD444D00567158 /* main.m */,
@@ -188,6 +227,16 @@
 				A6BA5F3B17CD444D00567158 /* Default@2x.png in Resources */,
 				A6BA5F3D17CD444D00567158 /* Default-568h@2x.png in Resources */,
 				A6BA5F4017CD444D00567158 /* MainStoryboard.storyboard in Resources */,
+				A6EEE76D17DA488B0080A338 /* Icon-72.png in Resources */,
+				A6EEE76E17DA488B0080A338 /* Icon-72@2x.png in Resources */,
+				A6EEE76F17DA488B0080A338 /* Icon-Small-50.png in Resources */,
+				A6EEE77017DA488B0080A338 /* Icon-Small-50@2x.png in Resources */,
+				A6EEE77117DA488B0080A338 /* Icon-Small.png in Resources */,
+				A6EEE77217DA488B0080A338 /* Icon-Small@2x.png in Resources */,
+				A6EEE77317DA488B0080A338 /* Icon.png in Resources */,
+				A6EEE77417DA488B0080A338 /* Icon@2x.png in Resources */,
+				A6EEE77517DA488B0080A338 /* iTunesArtwork.png in Resources */,
+				A6EEE77617DA488B0080A338 /* iTunesArtwork@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +255,7 @@
 				A6B497AE17CE3CDE007739B7 /* SurveyQuestion.m in Sources */,
 				A6B497B117CE3E21007739B7 /* BluebirdObject.m in Sources */,
 				A6B497B417CE42E7007739B7 /* SurveyAnswer.m in Sources */,
+				A6E9EFDC17D7897E00E8599C /* QuestionDetailVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

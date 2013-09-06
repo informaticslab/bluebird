@@ -10,6 +10,5 @@
 
 @interface SurveyAnswer : BluebirdObject
 
-@property(nonatomic, strong) NSString *answerText;
 
 @end

@@ -27,4 +27,24 @@
     
 }
 
+-(NSUInteger)countOfAnswers
+{
+    return [_answers count];
+    
+}
+
+-(SurveyAnswer *)answerAtIndex:(NSUInteger)index
+{
+    
+    return (SurveyAnswer *)_answers[index];
+    
+}
+
+-(NSString *)getHashTagResults
+{
+    
+    NSString *result = [NSString stringWithFormat:@"#%@%@",self.hashtag, self.selectedAnswer.hashtag];
+    return result;
+
+}
 @end
