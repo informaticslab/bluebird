@@ -88,8 +88,8 @@
 -(NSString *)getResultsTweet
 {
     
-    NSString *tweetStart = @"I'm helping CDC crowd out the flu. @tellCDC ";
-    NSString *tweetEnd = @". Here's how you can help: http:////www.cdc.gov/flu";
+    NSString *tweetStart = @"I'm helping CDC crowd out the flu. @tellCDC [#FLU";
+    NSString *tweetEnd = @"]. Here's how you can help: http://www.cdc.gov/flu";
     
     NSString *results = tweetStart;
     for (SurveyQuestion *question in _questions)

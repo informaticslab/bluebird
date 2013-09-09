@@ -134,27 +134,27 @@
 			children = (
 				A645D8F717DE40650061F598 /* AboutVC.h */,
 				A645D8F817DE40650061F598 /* AboutVC.m */,
-				A645D8F917DE40650061F598 /* AppManager.h */,
-				A645D8FA17DE40650061F598 /* AppManager.m */,
-				A645D8FB17DE40650061F598 /* Debug.h */,
 				A6BA5F3517CD444D00567158 /* AppDelegate.h */,
 				A6BA5F3617CD444D00567158 /* AppDelegate.m */,
+				A645D8F917DE40650061F598 /* AppManager.h */,
+				A645D8FA17DE40650061F598 /* AppManager.m */,
+				A6B497AF17CE3E21007739B7 /* BluebirdObject.h */,
+				A6B497B017CE3E21007739B7 /* BluebirdObject.m */,
+				A645D8FB17DE40650061F598 /* Debug.h */,
+				A6BA5F4417CD444D00567158 /* FlipsideViewController.h */,
+				A6BA5F4517CD444D00567158 /* FlipsideViewController.m */,
 				A6BA5F3E17CD444D00567158 /* MainStoryboard.storyboard */,
 				A6BA5F4117CD444D00567158 /* MainViewController.h */,
 				A6BA5F4217CD444D00567158 /* MainViewController.m */,
-				A6BA5F4417CD444D00567158 /* FlipsideViewController.h */,
-				A6BA5F4517CD444D00567158 /* FlipsideViewController.m */,
+				A6E9EFDA17D7897E00E8599C /* QuestionDetailVC.h */,
+				A6E9EFDB17D7897E00E8599C /* QuestionDetailVC.m */,
 				A6BA5F2D17CD444D00567158 /* Supporting Files */,
 				A6B497A917CE39C6007739B7 /* Survey.h */,
 				A6B497AA17CE39C6007739B7 /* Survey.m */,
-				A6B497AC17CE3CDE007739B7 /* SurveyQuestion.h */,
-				A6B497AD17CE3CDE007739B7 /* SurveyQuestion.m */,
-				A6B497AF17CE3E21007739B7 /* BluebirdObject.h */,
-				A6B497B017CE3E21007739B7 /* BluebirdObject.m */,
 				A6B497B217CE42E7007739B7 /* SurveyAnswer.h */,
 				A6B497B317CE42E7007739B7 /* SurveyAnswer.m */,
-				A6E9EFDA17D7897E00E8599C /* QuestionDetailVC.h */,
-				A6E9EFDB17D7897E00E8599C /* QuestionDetailVC.m */,
+				A6B497AC17CE3CDE007739B7 /* SurveyQuestion.h */,
+				A6B497AD17CE3CDE007739B7 /* SurveyQuestion.m */,
 			);
 			path = bluebird;
 			sourceTree = "<group>";
@@ -365,10 +365,14 @@
 		A6BA5F4B17CD444D00567158 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bluebird/bluebird-Prefix.pch";
 				INFOPLIST_FILE = "bluebird/bluebird-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
