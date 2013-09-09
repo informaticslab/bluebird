@@ -18,9 +18,11 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     _survey = [[Survey alloc] initWithStaticData];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,6 +30,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Flipside View
 
@@ -79,9 +82,18 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = [NSString stringWithFormat:@"Question %d", indexPath.row +1];
-    cell.detailTextLabel.text = [_survey questionTextAtIndex:indexPath.row];
-    cell.detailTextLabel.numberOfLines = 0;
+    SurveyQuestion *question = [_survey questionAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%d. %@", indexPath.row +1, question.text];
+    cell.textLabel.numberOfLines = 0;
+    
+    if (question.selectedAnswer != nil)
+        cell.detailTextLabel.text = question.selectedAnswer.text;
+    else
+        cell.detailTextLabel.text = @"";
+
+//    cell.textLabel.text = [NSString stringWithFormat:@"Question %d", indexPath.row +1];
+//    cell.detailTextLabel.text = [_survey questionTextAtIndex:indexPath.row];
+//    cell.detailTextLabel.numberOfLines = 0;
     
     return cell;
 }
@@ -119,9 +131,20 @@
 
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
-        SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:[_survey getResultsTweet]];
-        [self presentViewController:tweetSheet animated:YES completion:nil];
+        if ([_survey numberOfAnsweredQuestions] != 0 ) {
+            SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+            [tweetSheet setInitialText:[_survey getResultsTweet]];
+            [self presentViewController:tweetSheet animated:YES completion:nil];
+        } else {
+            UIAlertView *alertView = [[UIAlertView alloc]
+                                      initWithTitle:@"Sorry"
+                                      message:@"You have not answered any questions about the flu so there is nothing to Tweet."
+                                      delegate:self
+                                      cancelButtonTitle:@"OK"
+                                      otherButtonTitles:nil];
+            [alertView show];
+            
+        }
     }
     else
     {
@@ -133,5 +156,10 @@
                                   otherButtonTitles:nil];
         [alertView show];
     }
+}
+
+- (IBAction)btnRestartSurveyTouchUp:(id)sender {
+    
+    [_survey restart];
 }
 @end

@@ -70,8 +70,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = [NSString stringWithFormat:@"%d. )", indexPath.row];
-    cell.detailTextLabel.text = ((SurveyAnswer *)_surveyQuestion.answers[indexPath.row]).text;
+//    cell.textLabel.text = [NSString stringWithFormat:@"%d. )", indexPath.row];
+    cell.textLabel.text = ((SurveyAnswer *)_surveyQuestion.answers[indexPath.row]).text;
+//    cell.detailTextLabel.text = ((SurveyAnswer *)_surveyQuestion.answers[indexPath.row]).text;
     
     if ((_surveyQuestion.selectedAnswerIndex == indexPath.row) && (_surveyQuestion.selectedAnswer != nil)) 
         cell.accessoryType = UITableViewCellAccessoryCheckmark;

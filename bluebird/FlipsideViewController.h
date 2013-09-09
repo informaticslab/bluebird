@@ -17,6 +17,8 @@
 @interface FlipsideViewController : UIViewController
 
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UILabel *labelVersionInfo;
+@property (weak, nonatomic) IBOutlet UILabel *labelBuildInfo;
 
 - (IBAction)done:(id)sender;
 

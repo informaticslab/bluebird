@@ -18,8 +18,11 @@
 
 -(id)initWithStaticData;
 -(NSInteger)numberOfQuestions;
+-(NSInteger)numberOfAnsweredQuestions;
+
 -(SurveyQuestion *)questionAtIndex:(NSInteger)index;
 -(NSString *)questionTextAtIndex:(NSInteger)index;
 -(NSString *)getResultsTweet;
+-(void)restart;
 
 @end

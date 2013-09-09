@@ -21,5 +21,6 @@
 -(NSUInteger)countOfAnswers;
 -(SurveyAnswer *)answerAtIndex:(NSUInteger)index;
 -(NSString *)getHashTagResults;
+-(void)restart;
 
 @end

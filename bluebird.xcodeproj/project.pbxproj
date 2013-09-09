@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A645D8FC17DE40650061F598 /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A645D8F817DE40650061F598 /* AboutVC.m */; };
+		A645D8FD17DE40650061F598 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A645D8FA17DE40650061F598 /* AppManager.m */; };
 		A6B497AB17CE39C6007739B7 /* Survey.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B497AA17CE39C6007739B7 /* Survey.m */; };
 		A6B497AE17CE3CDE007739B7 /* SurveyQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B497AD17CE3CDE007739B7 /* SurveyQuestion.m */; };
 		A6B497B117CE3E21007739B7 /* BluebirdObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B497B017CE3E21007739B7 /* BluebirdObject.m */; };
@@ -38,6 +40,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A645D8F717DE40650061F598 /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
+		A645D8F817DE40650061F598 /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		A645D8F917DE40650061F598 /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
+		A645D8FA17DE40650061F598 /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
+		A645D8FB17DE40650061F598 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
 		A6B497A917CE39C6007739B7 /* Survey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Survey.h; sourceTree = "<group>"; };
 		A6B497AA17CE39C6007739B7 /* Survey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Survey.m; sourceTree = "<group>"; };
 		A6B497AC17CE3CDE007739B7 /* SurveyQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyQuestion.h; sourceTree = "<group>"; };
@@ -125,6 +132,11 @@
 		A6BA5F2C17CD444D00567158 /* bluebird */ = {
 			isa = PBXGroup;
 			children = (
+				A645D8F717DE40650061F598 /* AboutVC.h */,
+				A645D8F817DE40650061F598 /* AboutVC.m */,
+				A645D8F917DE40650061F598 /* AppManager.h */,
+				A645D8FA17DE40650061F598 /* AppManager.m */,
+				A645D8FB17DE40650061F598 /* Debug.h */,
 				A6BA5F3517CD444D00567158 /* AppDelegate.h */,
 				A6BA5F3617CD444D00567158 /* AppDelegate.m */,
 				A6BA5F3E17CD444D00567158 /* MainStoryboard.storyboard */,
@@ -256,6 +268,8 @@
 				A6B497B117CE3E21007739B7 /* BluebirdObject.m in Sources */,
 				A6B497B417CE42E7007739B7 /* SurveyAnswer.m in Sources */,
 				A6E9EFDC17D7897E00E8599C /* QuestionDetailVC.m in Sources */,
+				A645D8FC17DE40650061F598 /* AboutVC.m in Sources */,
+				A645D8FD17DE40650061F598 /* AppManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

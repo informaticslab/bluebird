@@ -1,23 +1,22 @@
 //
-//  FlipsideViewController.m
-//  bluebird
+//  AboutVC.m
+//  retro
 //
-//  Created by jtq6 on 8/27/13.
-//  Copyright (c) 2013 Informatics Research and Development Lab. All rights reserved.
+//  Created by jtq6 on 8/12/13.
+//  Copyright (c) 2013 jtq6. All rights reserved.
 //
 
-#import "FlipsideViewController.h"
+#import "AboutVC.h"
 
-@interface FlipsideViewController ()
 
-@end
+@implementation AboutVC
 
-@implementation FlipsideViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view.
+    // Custom initialization
     _labelVersionInfo.text = [self getVersionString];
     _labelBuildInfo.text = [self getBuildString];
 }
@@ -40,13 +39,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Actions
-
-- (IBAction)done:(id)sender
-{
-    [self.delegate flipsideViewControllerDidFinish:self];
 }
 
 @end

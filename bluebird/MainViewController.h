@@ -16,5 +16,6 @@
 @property (nonatomic, strong) SurveyQuestion *selectedQuestion;
 
 - (IBAction)tweetTapped:(id)sender;
+- (IBAction)btnRestartSurveyTouchUp:(id)sender;
 
 @end

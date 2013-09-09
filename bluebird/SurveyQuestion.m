@@ -47,4 +47,12 @@
     return result;
 
 }
+
+-(void)restart
+{
+    _selectedAnswer = nil;
+    _selectedAnswerIndex = 0;
+    
+}
+
 @end

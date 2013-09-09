@@ -58,6 +58,17 @@
 
 }
 
+-(NSInteger)numberOfAnsweredQuestions
+{
+    NSInteger answerQuestions = 0;
+    
+    for (SurveyQuestion *question in _questions)
+        if (question.selectedAnswer != nil)
+            answerQuestions += 1;
+  
+    return answerQuestions;
+}
+
 -(NSString *)questionTextAtIndex:(NSInteger)index
 {
     SurveyQuestion *question = _questions[index];
@@ -81,12 +92,24 @@
     NSString *tweetEnd = @". Here's how you can help: http:////www.cdc.gov/flu";
     
     NSString *results = tweetStart;
-    for (SurveyQuestion *question in _questions) 
-        results = [results stringByAppendingString:[question getHashTagResults]];
+    for (SurveyQuestion *question in _questions)
+        if (question.selectedAnswer != nil) {
+            results = [results stringByAppendingString:[question getHashTagResults]];
+        }
     
     results = [results stringByAppendingString:tweetEnd];
     
     return results;
+    
+}
+
+-(void)restart
+{
+    
+    for (SurveyQuestion *question in _questions) {
+        [question restart];
+    }
+        
     
 }
 
