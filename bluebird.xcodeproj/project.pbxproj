@@ -211,6 +211,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Informatics Research and Development Lab";
+				TargetAttributes = {
+					A6BA5F2217CD444D00567158 = {
+						DevelopmentTeam = Z827RBGAJC;
+					};
+				};
 			};
 			buildConfigurationList = A6BA5F1E17CD444D00567158 /* Build configuration list for PBXProject "bluebird" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -354,6 +359,7 @@
 		A6BA5F4A17CD444D00567158 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bluebird/bluebird-Prefix.pch";
 				INFOPLIST_FILE = "bluebird/bluebird-Info.plist";
@@ -365,7 +371,7 @@
 		A6BA5F4B17CD444D00567158 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bluebird/bluebird-Prefix.pch";
